@@ -1,5 +1,5 @@
-from .question import QuestionAdmin
+from .test import TestAdmin
 
 __all__ = [
-    'QuestionAdmin'
+    'TestAdmin',
 ]
