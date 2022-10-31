@@ -65,5 +65,5 @@ class _QuestionInline(NestedStackedInline):
 @admin.register(Test)
 class TestAdmin(NestedModelAdmin):
     inlines = [_QuestionInline]
-    list_display = ('title', 'created_at', 'updated_at')
+    list_display = ('title', 'test_suite', 'created_at', 'updated_at')
     ordering = ('-updated_at',)
