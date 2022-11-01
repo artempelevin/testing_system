@@ -1,0 +1,629 @@
+[
+    {
+        "model": "main.answer",
+        "pk": 1,
+        "fields": {
+            "text": "коробка шоколадных конфет",
+            "is_right": true,
+            "question": 1
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 2,
+        "fields": {
+            "text": "она есть",
+            "is_right": false,
+            "question": 1
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 3,
+        "fields": {
+            "text": "приговор",
+            "is_right": false,
+            "question": 1
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 4,
+        "fields": {
+            "text": "дом",
+            "is_right": false,
+            "question": 1
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 5,
+        "fields": {
+            "text": "ты не уйдёшь",
+            "is_right": false,
+            "question": 2
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 6,
+        "fields": {
+            "text": "ты не пройдёшь",
+            "is_right": true,
+            "question": 2
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 7,
+        "fields": {
+            "text": "ты не балдёж!",
+            "is_right": false,
+            "question": 2
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 8,
+        "fields": {
+            "text": "ты не умрёшь",
+            "is_right": false,
+            "question": 2
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 9,
+        "fields": {
+            "text": "да, был",
+            "is_right": false,
+            "question": 3
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 10,
+        "fields": {
+            "text": "не брат он ему - гнида черножопая",
+            "is_right": true,
+            "question": 3
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 11,
+        "fields": {
+            "text": "Майкла Джексона",
+            "is_right": true,
+            "question": 4
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 12,
+        "fields": {
+            "text": "Тони Робертсона",
+            "is_right": false,
+            "question": 4
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 13,
+        "fields": {
+            "text": "Арнольда Шварценеггера",
+            "is_right": false,
+            "question": 4
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 14,
+        "fields": {
+            "text": "Майкл Джордана",
+            "is_right": false,
+            "question": 4
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 15,
+        "fields": {
+            "text": "на тебя",
+            "is_right": false,
+            "question": 5
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 16,
+        "fields": {
+            "text": "деревня",
+            "is_right": true,
+            "question": 5
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 17,
+        "fields": {
+            "text": "совсем забыла",
+            "is_right": false,
+            "question": 5
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 18,
+        "fields": {
+            "text": "Льдк",
+            "is_right": false,
+            "question": 5
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 19,
+        "fields": {
+            "text": "нет",
+            "is_right": true,
+            "question": 6
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 20,
+        "fields": {
+            "text": "да",
+            "is_right": false,
+            "question": 6
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 21,
+        "fields": {
+            "text": "Москве",
+            "is_right": false,
+            "question": 7
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 22,
+        "fields": {
+            "text": "делах",
+            "is_right": false,
+            "question": 7
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 24,
+        "fields": {
+            "text": "не слышу",
+            "is_right": false,
+            "question": 7
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 29,
+        "fields": {
+            "text": "печали",
+            "is_right": true,
+            "question": 7
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 30,
+        "fields": {
+            "text": "Посетить Гондор",
+            "is_right": false,
+            "question": 9
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 31,
+        "fields": {
+            "text": "Войти в Мордор",
+            "is_right": true,
+            "question": 9
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 32,
+        "fields": {
+            "text": "Съесть все эльфийские лепёшки",
+            "is_right": false,
+            "question": 9
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 33,
+        "fields": {
+            "text": "Перехитрить хоббита",
+            "is_right": false,
+            "question": 9
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 34,
+        "fields": {
+            "text": "Как тебе такое, Обама?",
+            "is_right": false,
+            "question": 10
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 35,
+        "fields": {
+            "text": "Как тебе такое, Тони Старк?",
+            "is_right": false,
+            "question": 10
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 36,
+        "fields": {
+            "text": "Как тебе такое, Илон Маск?",
+            "is_right": true,
+            "question": 10
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 37,
+        "fields": {
+            "text": "Как тебе такое, Серена Уильямс?",
+            "is_right": false,
+            "question": 10
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 38,
+        "fields": {
+            "text": "Черепаху",
+            "is_right": false,
+            "question": 11
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 39,
+        "fields": {
+            "text": "Огра",
+            "is_right": false,
+            "question": 11
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 40,
+        "fields": {
+            "text": "Сущность в виде гномика",
+            "is_right": true,
+            "question": 11
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 41,
+        "fields": {
+            "text": "Топаз",
+            "is_right": false,
+            "question": 11
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 42,
+        "fields": {
+            "text": "\"Вы кто такие? Я Вас не звал!\" и далее по тексту)",
+            "is_right": true,
+            "question": 12
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 43,
+        "fields": {
+            "text": "Ты кто такой? Давай, до свидания!",
+            "is_right": false,
+            "question": 12
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 44,
+        "fields": {
+            "text": "Ой всё",
+            "is_right": false,
+            "question": 12
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 45,
+        "fields": {
+            "text": "Простите, мне не надо. Спасибо. До свидания. Всего Вам хорошего!",
+            "is_right": false,
+            "question": 12
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 46,
+        "fields": {
+            "text": "Язь! ЙААААААЗЬЬЬЬЬЬЬ",
+            "is_right": true,
+            "question": 13
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 47,
+        "fields": {
+            "text": "Сом! Сомушка! СООООМЕЦЦЦ",
+            "is_right": false,
+            "question": 13
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 48,
+        "fields": {
+            "text": "Карасть! ВООООТ ТАКОЙЙЙЙ",
+            "is_right": false,
+            "question": 13
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 49,
+        "fields": {
+            "text": "Воблушка, воооблушечка, вооооообббблаааааа",
+            "is_right": false,
+            "question": 13
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 50,
+        "fields": {
+            "text": "Берет",
+            "is_right": false,
+            "question": 14
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 51,
+        "fields": {
+            "text": "Нимб",
+            "is_right": false,
+            "question": 14
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 52,
+        "fields": {
+            "text": "Элегантная шляпа",
+            "is_right": false,
+            "question": 14
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 53,
+        "fields": {
+            "text": "Кандибобер",
+            "is_right": true,
+            "question": 14
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 54,
+        "fields": {
+            "text": "Кот, про которого сняли 2 фильма",
+            "is_right": false,
+            "question": 15
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 55,
+        "fields": {
+            "text": "Древний английский король",
+            "is_right": false,
+            "question": 15
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 56,
+        "fields": {
+            "text": "Дедушка, скрывающий боль",
+            "is_right": true,
+            "question": 15
+        }
+    },
+    {
+        "model": "main.answer",
+        "pk": 57,
+        "fields": {
+            "text": "Корм для собак",
+            "is_right": false,
+            "question": 15
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 1,
+        "fields": {
+            "text": "Жизнь как ....",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 2,
+        "fields": {
+            "text": "Что произнёс Гендальф при встрече с Балрогом в подземельях Мории?",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 3,
+        "fields": {
+            "text": "В фильме \"Брат\" главный герой Данила Багров заступается за порядочного человека в автобусе. Пригрозив армянину пистолетом, Данила слышит в ответ фразу: \"Не убивай брат, деньги возьми\". Был ли арямянин братом Багрова?",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 4,
+        "fields": {
+            "text": "Космос, описывая свою машину, однажды сказал: \"Такая только у меня и у ....\"",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 5,
+        "fields": {
+            "text": "Продолжите фразу: \"Людк! А Людк! Тьфу, ....\"",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 6,
+        "fields": {
+            "text": "Верит ли Москва слезам?",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 7,
+        "fields": {
+            "text": "Оставь меня, старушка, я в ....",
+            "test": 1
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 9,
+        "fields": {
+            "text": "Что, по мнению Боромира (героя трилогии «Властелин Колец»), нельзя было просто так взять и сделать?",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 10,
+        "fields": {
+            "text": "В России любят делиться своими бытовыми решениями с интернетом и хвастаться ими перед одним известным американским миллиардером. Что при этом вопрошают создатели мема?",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 11,
+        "fields": {
+            "text": "Какую сущность видел мощный экстрасенс (Алмаз Индиго)?",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 12,
+        "fields": {
+            "text": "Представь: к тебе в гости пришли продавцы пылесосов или живительных китайских капель. Как правильно с ними попрощаться? Вспомни совет  отшельника.",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 13,
+        "fields": {
+            "text": "Представим, что Вы воловили огромную рыбу из пруда. Вы хватаете камеру и начинаете в неё кричать следующие фразы:",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 14,
+        "fields": {
+            "text": "Ещё одна эмоция — замешательство. Именно её испытывали все зрители, прослушавшие монолог женщины-балерины-Ибрагима. Итак, что у неё на голове?",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.question",
+        "pk": 15,
+        "fields": {
+            "text": "Гарольд - это ....",
+            "test": 2
+        }
+    },
+    {
+        "model": "main.testsuite",
+        "pk": 1,
+        "fields": {
+            "name": "Стандартный набор тестов",
+            "created_at": "2022-11-01T17:40:16.645Z",
+            "updated_at": "2022-11-01T17:40:16.645Z"
+        }
+    },
+    {
+        "model": "main.testsuite",
+        "pk": 2,
+        "fields": {
+            "name": "Мемы",
+            "created_at": "2022-11-01T18:18:22.750Z",
+            "updated_at": "2022-11-01T18:18:22.750Z"
+        }
+    },
+    {
+        "model": "main.testsuite",
+        "pk": 3,
+        "fields": {
+            "name": "Фильмы",
+            "created_at": "2022-11-01T18:18:29.942Z",
+            "updated_at": "2022-11-01T18:18:29.942Z"
+        }
+    },
+    {
+        "model": "main.test",
+        "pk": 1,
+        "fields": {
+            "title": "Познания в классике",
+            "created_at": "2022-11-01T17:43:11.447Z",
+            "updated_at": "2022-11-01T18:30:22.996Z",
+            "test_suite": 3
+        }
+    },
+    {
+        "model": "main.test",
+        "pk": 2,
+        "fields": {
+            "title": "На сколько Вы сильны в мемах?",
+            "created_at": "2022-11-01T18:39:20.761Z",
+            "updated_at": "2022-11-01T18:39:20.761Z",
+            "test_suite": 2
+        }
+    }
+]
