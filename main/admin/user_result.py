@@ -7,10 +7,18 @@ from main.models import UserResult
 
 @admin.register(UserResult)
 class UserResultAdmin(NestedModelAdmin):
-    list_filter = ('user', 'question__test')
-    list_display = ('user', 'question', 'answer', 'get_is_right')
+    list_filter = ('user', 'question__test__test_suite', 'question__test', 'answer__is_right')
+    list_display = ('user', 'get_test_suite', 'get_test', 'question', 'answer', 'get_is_right')
     list_display_links = ('user', 'question')
     readonly_fields = ('user', 'question', 'answer')
+
+    @display(ordering='question__test__test_suite', description='Набор тестов')
+    def get_test_suite(self, obj: UserResult):
+        return obj.question.test.test_suite
+
+    @display(ordering='question__test', description='Тест')
+    def get_test(self, obj: UserResult):
+        return obj.question.test
 
     @display(ordering='answer__is_right', description='Правильность')
     def get_is_right(self, obj: UserResult):

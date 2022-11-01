@@ -3,7 +3,7 @@ from django.db import models
 
 class Question(models.Model):
     text = models.TextField(null=False, verbose_name='Текст вопроса')
-    test = models.ForeignKey('Test', on_delete=models.CASCADE)
+    test = models.ForeignKey('Test', verbose_name='Тест', on_delete=models.CASCADE)
 
     class Meta:
         app_label = 'main'
