@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Добро пожаловать на сайт по тестированию</h1>
+
+    {% if user.is_authenticated %}
+        <form action="{% url 'test_suites' %}" method="get">
+            <input type="submit" value="К наборам тестов"/>
+        </form>
+    {% endif %}
+
+{% endblock %}
