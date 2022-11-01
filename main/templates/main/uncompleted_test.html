@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+
 {% block content %}
 
     <form action="{% url 'test' test_suite_id=test.test_suite.id test_id=test.id %}" method="post">
