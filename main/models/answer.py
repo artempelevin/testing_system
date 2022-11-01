@@ -13,4 +13,4 @@ class Answer(models.Model):
         verbose_name_plural = 'ответы'
 
     def __str__(self):
-        return self.text
+        return self.text if len(self.text) < 35 else f"{self.text[:32]}..."
