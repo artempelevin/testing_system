@@ -25,6 +25,9 @@ class _AnswerInlineFormset(forms.models.BaseInlineFormSet):
         num_of_answers = len(answers)
         num_of_deleted_answers = sum(1 for form in self.forms if form.cleaned_data.get('DELETE', False))
 
+        if num_of_answers == num_of_deleted_answers:    # Всё ок, удаляют сразу весь вопрос
+            return
+
         if num_of_answers - num_of_deleted_answers < 2:
             raise ValidationError('Необходимо оставить минимум 2 ответа')
 
