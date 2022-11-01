@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('_nested_admin/', include('nested_admin.urls')),   # Для работы 'nested_admin'
+    path('_nested_admin/', include('nested_admin.urls')),  # Для работы 'nested_admin'
+
+    path('', include('main.urls')),
     path('users/', include('users.urls')),
-    path('home/', include('main.urls')),
+    path('admin/', admin.site.urls),
+
 ]
