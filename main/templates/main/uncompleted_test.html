@@ -26,5 +26,8 @@
         </ul>
     </form>
 
+    <form action="{% url 'test_suite' test_suite_id=test.test_suite.id %}" method="get">
+        <input type="submit" value="Назад к тестам"/>
+    </form>
 
 {% endblock %}
