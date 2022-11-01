@@ -22,7 +22,7 @@ class UserResultAdmin(NestedModelAdmin):
 
     @display(ordering='answer__is_right', description='Правильность')
     def get_is_right(self, obj: UserResult):
-        return '✔' if obj.answer.is_right else '❌'
+        return '✅' if obj.answer.is_right else '❌'
 
     def has_add_permission(self, request):  # Скрыли кнопку "Добавить" (ибо нефиг:D)
         return "add" in request.path or "change" in request.path
