@@ -1,0 +1,15 @@
+{% block content %}
+    <h1>Наборы тестов:</h1>
+
+    {% if testsuite_list %}
+        <ul>
+            {% for test_suite in testsuite_list %}
+                <li>
+                    <a href="{% url 'test_suite' test_suite_id=test_suite.id %}">{{ test_suite.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>К сожалению, тут ещё не появилось ни одного тестового набора...</p>
+    {% endif %}
+{% endblock %}

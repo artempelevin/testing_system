@@ -1,0 +1,28 @@
+{% block content %}
+
+    <form action="{% url 'test' test_suite_id=test.test_suite.id test_id=test.id %}" method="post">
+        {% csrf_token %}
+
+        <h1>
+            {{ question.text }}
+            <label>
+                <input name="question_id" type="text" value="{{ question.id }}">
+            </label>
+        </h1>
+
+        <ul>
+            {% for answer in answers %}
+                <li>
+                    <label>
+                        <input name="answer_id" type="checkbox" value="{{ answer.id }}"/>
+                    </label>
+                    {{ answer.text }}
+                </li>
+            {% endfor %}
+
+            <input type="submit" value="Далее"/>
+        </ul>
+    </form>
+
+
+{% endblock %}

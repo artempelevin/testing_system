@@ -1,0 +1,36 @@
+{% block content %}
+
+    <h1>{{ curr_question }}</h1>
+
+    <ul>
+        {% for question in test.question_set.all %}
+            <li>
+                {{ question.text }}
+                <ul>
+                    {% for answer in question.answer_set.all %}
+                        <li>
+                            {% if answer in user_answers %}
+                                {% if answer.is_right %}
+                                    <b>{{ answer.text }}</b> ✅
+                                {% else %}
+                                    <b>{{ answer.text }}</b> ❌
+                                {% endif %}
+                            {% else %}
+                                {% if answer.is_right %}
+                                    {{ answer.text }} ✅
+                                {% else %}
+                                    {{ answer.text }}
+                                {% endif %}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{% url 'test_suite' test_suite_id=test.test_suite.id %}" method="get">
+        <input type="submit" value="Назад к тестам"/>
+    </form>
+
+{% endblock %}
