@@ -2,34 +2,21 @@
 
 {% block content %}
 
-    <h1>Тесты для набора</h1>
+    <h1>Тесты из набора:</h1>
 
-    {% if test_list %}
-
-        <ul>
+    <div class="list-group">
+        {% if test_list %}
             {% for test in test_list %}
-                <li>
-                    <i>{{ test.title }}</i>
-                    <form action="{% url 'test' test_suite_id=test.test_suite.id test_id=test.id %}" method="get">
-                        <button type="submit">Приступить к тесту</button>
-                    </form>
-                </li>
+                <a class="list-group-item list-group-item-success"
+                   href="{% url 'test' test_suite_id=test.test_suite.id test_id=test.id %}">{{ test.title }}</a>
             {% endfor %}
-            <li>
-                <form action="{% url 'test_suites' %}" method="get">
-                    <button type="submit">Назад к тестовым наборам</button>
-                </form>
-            </li>
-        </ul>
+        {% else %}
 
+            <p>К сожалению, тут ещё не появилось ни одного теста...</p>
 
-    {% else %}
+        {% endif %}
 
-        <p>К сожалению, тут ещё не появилось ни одного теста...</p>
-        <form action="{% url 'test_suites' %}" method="get">
-            <button type="submit">Назад</button>
-        </form>
-
-    {% endif %}
+        <a class="btn btn-secondary" href="{% url 'test_suites' %}">Назад к тестовым наборам</a>
+    </div>
 
 {% endblock %}

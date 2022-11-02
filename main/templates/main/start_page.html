@@ -3,11 +3,10 @@
 {% block content %}
 
     <h1>Добро пожаловать на сайт по тестированию</h1>
-
-    {% if user.is_authenticated %}
-        <form action="{% url 'test_suites' %}" method="get">
-            <input type="submit" value="К наборам тестов"/>
-        </form>
-    {% endif %}
+    <div class="list-group">
+        {% if user.is_authenticated %}
+            <a class="btn btn-success" href="{% url 'test_suites' %}">К наборам тестов</a>
+        {% endif %}
+    </div>
 
 {% endblock %}

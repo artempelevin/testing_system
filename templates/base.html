@@ -4,24 +4,29 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    {#    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet">#}
+    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="jumbotron">
 <header>
     {% block header %}
-        {% if user.is_authenticated %}
-            Привет{% if user.first_name %}, {{ user.fist_name }}{% else %}, {{ user.username }}{% endif %} |
-            <a href="{% url 'signout' %}">Выйти</a>
-        {% else %}
-            <a href="{% url 'signin' %}">Войти</a>
-            <a href="{% url 'signup' %}">Зарегистрироваться</a>
-        {% endif %}
+        <div class="float-right">
+            {% if user.is_authenticated %}
+                Привет, {% if user.first_name %}<b>{{ user.first_name }}</b>{% else %}<b>{{ user.username }}</b>{% endif %}
+                <a class="btn btn-danger" href="{% url 'signout' %}">Выйти</a>
+            {% else %}
+                <a class="btn btn-primary" href="{% url 'signin' %}">Войти</a>
+                <a class="btn btn-success" href="{% url 'signup' %}">Зарегистрироваться</a>
+            {% endif %}
+        </div>
     {% endblock %}
 </header>
 <main>
-    {% block content %}
-    {% endblock %}
+    <div class="float-sm-left">
+        {% block content %}
+        {% endblock %}
+    </div>
+
 </main>
 </body>
 </html>

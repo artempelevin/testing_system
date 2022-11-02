@@ -6,33 +6,29 @@
 
     <ul>
         {% for question in test.question_set.all %}
-            <li>
-                {{ question.text }}
-                <ul>
+            <div class="list-group">
+                <h4>{{ question.text }}</h4>
+                <div class="list-group">
                     {% for answer in question.answer_set.all %}
-                        <li>
-                            {% if answer in user_answers %}
-                                {% if answer.is_right %}
-                                    <b>{{ answer.text }}</b> ✅
-                                {% else %}
-                                    <b>{{ answer.text }}</b> ❌
-                                {% endif %}
+                        {% if answer in user_answers %}
+                            {% if answer.is_right %}
+                                <div class="list-group-item list-group-item-success"><b>{{ answer.text }} ✅</b></div>
                             {% else %}
-                                {% if answer.is_right %}
-                                    {{ answer.text }} ✅
-                                {% else %}
-                                    {{ answer.text }}
-                                {% endif %}
+                                <div class="list-group-item list-group-item-danger"><b>{{ answer.text }} ❌</b></div>
                             {% endif %}
-                        </li>
+                        {% else %}
+                            {% if answer.is_right %}
+                                <div class="list-group-item list-group-item-secondary">{{ answer.text }} ✅</div>
+                            {% else %}
+                                <div class="list-group-item list-group-item-secondary">{{ answer.text }}</div>
+                            {% endif %}
+                        {% endif %}
                     {% endfor %}
-                </ul>
-            </li>
+                </div>
+            </div>
         {% endfor %}
     </ul>
 
-    <form action="{% url 'test_suite' test_suite_id=test.test_suite.id %}" method="get">
-        <input type="submit" value="Назад к тестам"/>
-    </form>
+    <a class="btn btn-secondary" href="{% url 'test_suite' test_suite_id=test.test_suite.id %}">Назад к тестам</a>
 
 {% endblock %}

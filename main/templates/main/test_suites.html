@@ -3,15 +3,21 @@
 {% block content %}
     <h1>Наборы тестов:</h1>
 
-    {% if testsuite_list %}
-        <ul>
+    <div class="list-group">
+        {% if testsuite_list %}
+
             {% for test_suite in testsuite_list %}
-                <li>
-                    <a href="{% url 'test_suite' test_suite_id=test_suite.id %}">{{ test_suite.name }}</a>
-                </li>
+                <a class="list-group-item list-group-item-success"
+                   href="{% url 'test_suite' test_suite_id=test_suite.id %}">{{ test_suite.name }}</a>
             {% endfor %}
-        </ul>
-    {% else %}
-        <p>К сожалению, тут ещё не появилось ни одного тестового набора...</p>
-    {% endif %}
+
+        {% else %}
+
+            <p>К сожалению, тут ещё не появилось ни одного тестового набора...</p>
+
+        {% endif %}
+
+        <a class="btn btn-secondary" href="{% url 'index' %}">На главную</a>
+
+    </div>
 {% endblock %}

@@ -5,29 +5,30 @@
     <form action="{% url 'test' test_suite_id=test.test_suite.id test_id=test.id %}" method="post">
         {% csrf_token %}
 
-        <h1>
+        <h3>
             {{ question.text }}
-            <label>
-                <input name="question_id" type="text" value="{{ question.id }}">
-            </label>
-        </h1>
+            <label><input name="question_id" type="hidden" value="{{ question.id }}"></label>
+        </h3>
 
-        <ul>
-            {% for answer in answers %}
-                <li>
-                    <label>
-                        <input name="answer_id" type="checkbox" value="{{ answer.id }}"/>
-                    </label>
-                    {{ answer.text }}
-                </li>
-            {% endfor %}
 
-            <input type="submit" value="Далее"/>
-        </ul>
-    </form>
+        {% for answer in answers %}
+            {#                    <label>#}
+            <div class="form-check">
+                <input name="answer_id" value="{{ answer.id }}" class="form-check-input" type="checkbox"
+                       id="checkbox-{{ answer.id }}">
+                <label class="form-check-label" for="checkbox-{{ answer.id }}">{{ answer.text }}</label>
 
-    <form action="{% url 'test_suite' test_suite_id=test.test_suite.id %}" method="get">
-        <input type="submit" value="Назад к тестам"/>
+                {#  <input type="checkbox"  name="answer_id" class="btn-check" id="btn-check-outlined" autocomplete="off" value="{{ answer.id }}">#}
+                {#  <label class="btn btn-outline-primary" for="btn-check-outlined">{{ answer.text }}</label><br>#}
+                {#                        <input class="checkbox" name="answer_id" type="checkbox" value="{{ answer.id }}"/>#}
+                {#                    </label>#}
+                {#                    {{ answer.text }}#}
+            </div>
+        {% endfor %}
+        <div class="list-group">
+            <input class="btn btn-success" type="submit" value="Далее"/>
+            <a class="btn btn-secondary" href="{% url 'test_suite' test_suite_id=test.test_suite.id %}">Назад</a>
+        </div>
     </form>
 
 {% endblock %}
