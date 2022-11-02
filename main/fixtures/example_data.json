@@ -1,5 +1,23 @@
 [
     {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$WCOMseYiGRmS6tbeNo9zO5$9ioX+xKPYGjPJudXZfrp370hA5JO1WBKPu/boOyz1NI=",
+            "last_login": "2022-11-02T07:10:01.937Z",
+            "is_superuser": true,
+            "username": "test",
+            "first_name": "",
+            "last_name": "",
+            "email": "test@test.ru",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-11-01T18:59:01.565Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
         "model": "main.answer",
         "pk": 1,
         "fields": {
